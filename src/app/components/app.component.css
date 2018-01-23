@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  background: lightblue;
+  height: 460px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  font-family: Arial;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+div {
+  color: purple;
+  background: lightblue;
+  margin:0px;
+}
+
+span {
+  color:red;
+}
+
+br {
+  background: lightblue;
+  height: 40px;
+}
+
+button {
+  margin: 10px;
+}
+
+label, input {
+  margin: 5px;
+  color:black;
+}
+
+pre {
+  color: green;
+  font-size: medium;
+  font-family: "Courier New";
+}

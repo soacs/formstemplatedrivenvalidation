@@ -1,20 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule, Directive} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {AppComponent} from './components/app.component';
+import {SsnValidatorDirective} from './directives/ssn.validator';
+import {EqualValidatorDirective} from './directives/equal.validator';
 
-import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [ AppComponent, EqualValidatorDirective, SsnValidatorDirective ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
+
+
